@@ -1,0 +1,3 @@
+- Criar solution para utilização no VS.
+    dotnet new sln
+-
