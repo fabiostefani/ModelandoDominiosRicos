@@ -1,3 +1,18 @@
 - Criar solution para utilização no VS.
     dotnet new sln
--
+- Entrar em cada pasta pasta e clicar a classlibrary
+    dotnet new classlib
+    DOmain e Shared
+    Na teste, criar o projeto de teste
+    dotnet new mstest
+- Após deve ser adicionado os projetos na Solution.
+    dotnet sln add <caminho_projeto>/<nome_projeto.csproj>
+- Após deve ser restaurado os pacotes do nuget
+    dotnet restore
+- Para compilar o projeto
+    dotnet build
+- Para adicionar as referencias entre os projetos
+    Entre no diretorio do projeto que você deseja adicionar a referencia
+    dotnet add reference ../<caminho_projeto_adicionar_referencia>/<nome_projeto_adicionar_referencia.csproj>
+    exemplo: dotnet add reference ../fabiostefani.io.PaymentContext.Shared/fabiostefani.io.PaymentContext.Shared.csproj
+    

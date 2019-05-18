@@ -1,0 +1,12 @@
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\bin\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.deps.json
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\bin\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.dll
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\bin\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.pdb
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.csprojAssemblyReference.cache
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.csproj.CoreCompileInputs.cache
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.AssemblyInfoInputs.cache
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.AssemblyInfo.cs
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.dll
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.pdb
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\bin\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Shared.dll
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\bin\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Shared.pdb
+D:\Desenv\Estudos\DotNet\ModelandoDominiosRicos\fabiostefani.io.PaymentContext.Domain\obj\Debug\netstandard2.0\fabiostefani.io.PaymentContext.Domain.csproj.CopyComplete
