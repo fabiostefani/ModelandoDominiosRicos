@@ -1,0 +1,6 @@
+fabiostefani.io.PaymentContext.Domain/bin/*.*
+fabiostefani.io.PaymentContext.Shared/bin/*.*
+fabiostefani.io.PaymentContext.Tests/bin/*.*
+fabiostefani.io.PaymentContext.Domain/obj/*.*
+fabiostefani.io.PaymentContext.Shared/obj/*.*
+fabiostefani.io.PaymentContext.Tests/obj/*.*
