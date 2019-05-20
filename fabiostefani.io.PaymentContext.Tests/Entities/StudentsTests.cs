@@ -10,15 +10,15 @@ namespace fabiostefani.io.PaymentContext.Tests.Entities
         [TestMethod]
         public void TestMethod1()
         {
-            var student = new Student("Fabio", "de Stefani", "123456", "fabioste@fabiostefani.io");            
+            //var student = new Student("Fabio", "de Stefani", "123456", "fabioste@fabiostefani.io");            
         }
 
         [TestMethod]
         public void AdicionarAssinatura()
         {
-            var subscription = new Subscription(null);
-            var student = new Student("Fabio", "de Stefani", "123456", "fabioste@fabiostefani.io");            
-            student.AddSubscription(subscription);
+            // var subscription = new Subscription(null);
+            // var student = new Student("Fabio", "de Stefani", "123456", "fabioste@fabiostefani.io");            
+            // student.AddSubscription(subscription);
         }
     }
 }
