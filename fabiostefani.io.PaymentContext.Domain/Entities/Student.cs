@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using fabiostefani.io.PaymentContext.Domain.ValueObjects;
 using fabiostefani.io.PaymentContext.Shared.Entities;
+using Flunt.Validations;
 
 namespace fabiostefani.io.PaymentContext.Domain.Entities
 {
@@ -29,11 +30,24 @@ namespace fabiostefani.io.PaymentContext.Domain.Entities
         {
             //Se ja tiver uma assinatura ativa, cancela e não adiciona uma nova
             //Cancela todas as outras assinaturas e coloca esta como principal
-            foreach (var sub in Subscriptions)
+            // foreach (var sub in Subscriptions)
+            // {
+            //     sub.Inactivate();
+            // }
+            // _subcriptions.Add(subscription);
+
+            //UTILIZANDO FLUNT
+            var hasSubscriptionActive = false;
+            foreach (var sub in _subcriptions)
             {
-                sub.Inactivate();
+                if (sub.Active)
+                    hasSubscriptionActive = true;
             }
-            _subcriptions.Add(subscription);
+
+            AddNotifications(new Contract()
+                .Requires()
+                .IsFalse(hasSubscriptionActive, "Student.Subscription", "Você já tem uma assinatura ativa")
+            );
         }
     }
 

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using fabiostefani.io.PaymentContext.Shared.Entities;
+using Flunt.Validations;
 
 namespace fabiostefani.io.PaymentContext.Domain.Entities
 {
@@ -25,6 +26,11 @@ namespace fabiostefani.io.PaymentContext.Domain.Entities
 
         public void AddPayment(Payment payment)
         {
+            AddNotifications(new Contract()
+                .Requires()
+                .IsGreaterThan(DateTime.Now, payment.PaidDate, "Subscription.Payments", "A data do pagamento deve ser futura")
+            );
+            
             _payments.Add(payment);
         }
 
