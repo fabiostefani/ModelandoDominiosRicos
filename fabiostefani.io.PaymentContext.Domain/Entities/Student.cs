@@ -15,6 +15,8 @@ namespace fabiostefani.io.PaymentContext.Domain.Entities
             Name = name;            
             Document = document;
             Email = email; 
+
+            AddNotifications(name, document, email);
         }
 
         public Name Name { get; private set; }    

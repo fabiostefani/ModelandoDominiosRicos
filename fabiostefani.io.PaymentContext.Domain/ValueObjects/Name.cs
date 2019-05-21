@@ -9,6 +9,9 @@ namespace fabiostefani.io.PaymentContext.Domain.ValueObjects
             this.FirstName = firstName;
             this.LastName = lastName;
 
+            if (string.IsNullOrEmpty(FirstName))
+                AddNotification("FirstName", "Nome inválido");
+
         }
         public string FirstName { get; private set; }
         public string LastName { get; private set; }

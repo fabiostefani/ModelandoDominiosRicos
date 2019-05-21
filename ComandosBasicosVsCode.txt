@@ -15,4 +15,7 @@
     Entre no diretorio do projeto que você deseja adicionar a referencia
     dotnet add reference ../<caminho_projeto_adicionar_referencia>/<nome_projeto_adicionar_referencia.csproj>
     exemplo: dotnet add reference ../fabiostefani.io.PaymentContext.Shared/fabiostefani.io.PaymentContext.Shared.csproj
-    
+- Para adicionar pacotes nuget
+    navegue até o projeto que deseja adicionar o pacote
+    dotnet add package <nome_pacote>
+        
