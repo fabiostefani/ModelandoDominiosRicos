@@ -21,7 +21,7 @@ namespace fabiostefani.io.PaymentContext.Domain.Entities
 
             AddNotifications(new Contract()
                 .Requires()
-                .IsGreaterThan(0, Total, "Paymento.Total", "O total não pode ser zero")
+                .IsLowerOrEqualsThan(0, Total, "Paymento.Total", "O total não pode ser zero")
                 .IsGreaterOrEqualsThan(Total, TotalPaid, "Paymento.TotalPaid", "O valor pago é menor que o valor do pagamento")
             );
         }

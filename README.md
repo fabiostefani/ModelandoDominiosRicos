@@ -4,3 +4,4 @@ Projeto criado através de video aulas para melhorar skill de modelagem de domí
 
 * Pacote nuget utilizado para validações
     FLUNT
+    https://github.com/andrebaltieri/flunt

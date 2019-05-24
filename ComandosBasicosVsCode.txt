@@ -18,4 +18,5 @@
 - Para adicionar pacotes nuget
     navegue até o projeto que deseja adicionar o pacote
     dotnet add package <nome_pacote>
-        
+- Para executar os testes
+    dotnet test        

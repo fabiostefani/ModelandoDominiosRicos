@@ -46,7 +46,8 @@ namespace fabiostefani.io.PaymentContext.Domain.Entities
 
             AddNotifications(new Contract()
                 .Requires()
-                .IsFalse(hasSubscriptionActive, "Student.Subscription", "Você já tem uma assinatura ativa")
+                .IsFalse(hasSubscriptionActive, "Student.Subscription", "Você já tem uma assinatura ativa.")
+                .AreEquals(0, subscription.Payments.Count, "Student.Subscription.Payments", "Esta assinatura não possui pagamentos.")
             );
         }
     }
