@@ -1,16 +1,20 @@
 using System;
 using fabiostefani.io.PaymentContext.Domain.Enums;
 using fabiostefani.io.PaymentContext.Shared.Commands;
+using Flunt.Notifications;
+using Flunt.Validations;
 
 namespace fabiostefani.io.PaymentContext.Domain.Commands
 {
-    public class CreatePayPalSubcriptionCommand : ICommand
+    public class CreateBoletoSubcriptionCommand : Notifiable, ICommand
     {
+
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }        
         public string Email { get; set; }
-        public string TransactionCode { get; set; }
+        public string BarCode { get; set; }    
+        public string BoletoNumber { get; set; }
         public string PaymentNumber { get; set; }
         public DateTime PaidDate { get; set; }
         public DateTime ExpireDate { get; set; }
@@ -30,7 +34,12 @@ namespace fabiostefani.io.PaymentContext.Domain.Commands
 
         public void Validate()
         {
-            throw new NotImplementedException();
+            AddNotifications(new Contract()
+                .Requires()
+                .HasMinLen(FirstName, 3, "Name.FirstName", "Nome deve conter pelo menos 3 caracteres")
+                .HasMinLen(LastName, 3, "Name.LastName", "Sobrenome deve conter pelo menos 3 caracteres")
+                .HasMaxLen(FirstName, 40, "Name.FirstName", "Nome deve conter até 40 caracteres")
+            );
         }
     }
 }

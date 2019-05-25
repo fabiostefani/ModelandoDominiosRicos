@@ -4,13 +4,15 @@ using fabiostefani.io.PaymentContext.Shared.Commands;
 
 namespace fabiostefani.io.PaymentContext.Domain.Commands
 {
-    public class CreatePayPalSubcriptionCommand : ICommand
+    public class CreateCreditCardSubcriptionCommand : ICommand
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Document { get; set; }        
         public string Email { get; set; }
-        public string TransactionCode { get; set; }
+        public string CardHolderName { get; set; }
+        public string CardNumber { get; set; }
+        public string LastTransactionNumber { get; set; }
         public string PaymentNumber { get; set; }
         public DateTime PaidDate { get; set; }
         public DateTime ExpireDate { get; set; }
