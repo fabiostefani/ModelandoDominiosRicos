@@ -62,7 +62,9 @@ namespace fabiostefani.io.PaymentContext.Domain.Handlers
         student.AddSubscription(subscription);
 
         AddNotifications(name, document, email, address, student, subscription, payment);
-
+        if (Invalid)
+            return new CommandResult(false, "Não foi possível realizar a sua assinatura.");
+            
         _studentRepository.CreateSubcription(student);
         
         _emailService.Send(student.Name.ToString(), student.Email.Address, "Bem vindo ao Fabiostefani.io", "Sua assinatura foi criada");
@@ -107,6 +109,8 @@ namespace fabiostefani.io.PaymentContext.Domain.Handlers
             student.AddSubscription(subscription);
 
             AddNotifications(name, document, email, address, student, subscription, payment);
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível realizar a sua assinatura.");
 
             _studentRepository.CreateSubcription(student);
             
@@ -152,6 +156,8 @@ namespace fabiostefani.io.PaymentContext.Domain.Handlers
             student.AddSubscription(subscription);
 
             AddNotifications(name, document, email, address, student, subscription, payment);
+            if (Invalid)
+                return new CommandResult(false, "Não foi possível realizar a sua assinatura.");
 
             _studentRepository.CreateSubcription(student);
             
